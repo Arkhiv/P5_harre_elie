@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>OriTeddy</title>
+</head>
+
+<body>
+    <header>
+        <div class="query__flexlogo"><a href="index.html">OriTeddy</a></div>
+        <div class="flexheader">
+            <div class="flexlogo"><a href="index.html">OriTeddy</a></div>
+            <div class="flexlink">
+                <a href="index.html" class="header__links">Nos produits</a>
+                <a href="contact.html" class="header__links">Nous contacter ?</a>
+            </div>
+
+            <div class="flexitems">
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="shopcart">
+                    <a href="shopcart.html" class="header__links"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section_command_confirmation">
+        <div class="command_confirmation_container" id="command">
+            <div class="command_headtxt">
+                <span>
+                    <p>Merci!</p>
+                </span>
+                <p>Votre commande a été enregistrée.</p>
+            </div>
+            <template id="command__txt">
+                <div class="command_bodytxt">
+                    <p>Nous sommes ravis que vous ayez trouvé un ourson a chouchouter !</p>
+                    <p>Votre commande n°<span id="command__id">XXXXXXXXXXXXX</span> pour un montant de <span
+                            id="command__price"></span> a été confirmée !</p><br>
+                    <p>Nous sommes persuadés que vous avez fait le bon choix,
+                        et pourtant si un ou plusieurs articles ne vous convenait pas, pas de stress,
+                        vous avez jusqu'a 15 jours pour nous les retourner gratuitement !</p><br>
+                    <p>Un mail de confirmation vous sera envoyé.
+                    </p>
+                    <p>Alors a très vite !</p>
+                    <p class="oriteddyteam">L'équipe OriTeddy</p>
+                </div>
+
+            </template>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div class="footerinfos">
+            <div id="quality" class="footer__block">
+                <i class="fas fa-hand-holding-heart"></i>
+                <p class="infotitle">SAVOIR-FAIRE</p>
+                <p class="infotxt">Fabrication française de grande qualité.</p>
+            </div>
+            <div id="phone" class="footer__block">
+                <i class="fas fa-phone"></i>
+                <p class="infotitle">QUESTION ?</p>
+                <p class="infotxt">Appelez-nous au XX XX XX XX XX !</p>
+            </div>
+            <div id="freeback" class="footer__block">
+                <i class="fas fa-shipping-fast"></i>
+                <p class="infotitle">RETOURS GRATUITS</p>
+                <p class="infotxt">Retours sans frais pendant 15jours.</p>
+            </div>
+            <div id="payement" class="footer__block">
+                <i class="fas fa-money-check"></i>
+                <p class="infotitle">PAIEMENT SÉCURISÉ</p>
+                <p class="infotxt">Partenaire Paypal ou Palpay.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/command.js"></script>
+</body>
+
+
+</html>

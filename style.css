@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+body,
+html {
+    height: 100%;
+}
+body {
+    display: table;
+    width: 100%;
+    color: #663300;
+}
+
+/* HEADER______________________________________________*/
+
+.flexheader {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px #663300 solid;
+    justify-content: space-between;
+    margin: 3%;
+    padding-bottom: 2%;
+}
+
+.flexlogo {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+}
+
+.flexlogo a {
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+}
+
+.flexlogo a:visited {
+    color: #663300;
+}
+
+.query__flexlogo {
+    display: flex;
+    justify-content: center;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    display: none;
+}
+
+.query__flexlogo a {
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+}
+.query__flexlogo a:visited {
+    color: #663300;
+}
+
+.flexlink {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.flexlink a {
+    text-decoration: none;
+    color: #663300;
+}
+
+.flexlink a:hover {
+    font-weight: 900;
+}
+
+.flexitems {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.flexitems a:visited {
+    color: #663300;
+}
+
+.user,
+.shopcart {
+    font-size: 2em;
+}
+
+.section_teddy_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    gap: 30px;
+}
+
+.teddy_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.teddy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teddy__name {
+    color: #663300;
+    font-weight: 900;
+}
+
+.teddy__price {
+    color: #663300;
+}
+
+.teddy__img {
+    height: 200px;
+    width: 300px;
+    border: #582f0e solid 1px;
+    margin-bottom: 5px;
+}
+
+.teddy__img:hover {
+    opacity: 20%;
+}
+.teddy__link {
+    text-decoration: none;
+}
+
+/* _________________________FOOTER _______________________ */
+footer {
+    display: table-row;
+    height: 150px;
+    background-color: #663300;
+}
+
+.footerinfos {
+    background-color: #663300;
+    color: ivory;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px 25px 10px 25px;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__block p {
+    padding-bottom: 3px;
+}
+
+.footer__block i {
+    padding-bottom: 20px;
+    font-size: x-large;
+}
+
+.infotitle {
+    font-weight: bold;
+}
+
+.infotxt {
+    font-size: 0.9em;
+}
+
+/*______________________PAGE PRODUCT____________________*/
+
+.section_teddy_product {
+    display: flex;
+    justify-content: center;
+}
+.teddy_product {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.teddy_visual {
+    border: 2px #663300 solid;
+    max-width: 600px;
+    height: auto;
+}
+
+.teddy_infos_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.teddy__name__product {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+}
+
+.teddy__price__product {
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.teddy__lorem__product {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.button__product {
+    display: flex;
+    justify-content: center;
+}
+
+.select__product {
+    padding-bottom: 30px;
+}
+
+/* TEDDY OPTIONS */
+
+/*___________________PAGE SHOPCART_____________________*/
+.shopcart_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart_recap {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.cart_payement {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.img__cart {
+    max-width: 150px;
+    height: auto;
+}
+
+#cartform {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1rem;
+    max-width: 60%;
+    margin: 0 auto;
+    min-width: 60%;
+    
+}
+
+.cartinputs:focus, .cartinputs:focus-visible, .cartinputs:focus-within{
+    border: #241200 1px solid;
+}
+
+.input__block{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+
+}
+.input__wrapper{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0.4rem;
+
+}
+
+.input__wrapper input{
+    flex: 1;
+    border-radius: 2px;
+    padding: 0.3rem;
+    border: #663300 1px solid;
+    outline: none;
+    
+}
+
+.input__wrapper input::placeholder{
+    color: #aa9580;
+
+    
+}
+
+.input__wrapper label{
+    flex: 1;
+    padding-bottom: 0.3rem;
+    
+}
+
+
+/*__________________PAGE_COMMAND______________________*/
+
+.command_confirmation_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.command_confirmation_container span {
+    font-weight: 900;
+
+}
+
+.command_headtxt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.command_bodytxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.oriteddyteam {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/*_________________BUTTON___________________*/
+
+.btn {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    position: relative;
+    border: 2px solid #582f0e;
+    margin: 0 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
+}
+
+.btn::before,
+.btn::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.btn2 {
+    border: none;
+    z-index: 10;
+}
+
+.btn2 h4 {
+    z-index: 10;
+    color: #663300;
+}
+
+.btn2:after {
+    border: 2px solid #663300;
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn2:before {
+    width: 0;
+    height: 0;
+    transition: all 500ms ease;
+}
+
+.btn2:hover:after {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.btn2:hover:before {
+    width: 100%;
+    height: 100%;
+    background-color: #663300;
+}
+
+.btn2:hover h4 {
+    color: #fff;
+}
+
+/* MEDIA Q---------------------*/
+
+@media (max-width: 1100px) {
+    .teddy_product {
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teddy_infos_container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .teddy_visual {
+        border: 2px #663300 solid;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .teddy_infos_container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #cartform, .command_confirmation_container{
+        max-width: 90%;
+     
+    }
+    .flexlogo {
+        display: none;
+    }
+    .query__flexlogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* TABLE*/
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #fff;
+    background: #663300;
+    margin: 20px;
+    border: #ccc 1px solid;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+
+table th {
+    padding: 21px 25px 22px 25px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+
+    background: #ededed;
+}
+table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+table tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+}
+table tr {
+    text-align: center;
+    padding-left: 20px;
+}
+table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    width: 10%;
+}
+table td {
+    padding: 15px;
+
+    background: #fafafa;
+}
+table tr.even td {
+    background: #f6f6f6;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+table tr:hover td {
+    background: #f2f2f2;
+}
+
+#trcart__total{
+    font-size: 15px;
+}
+
+#trcart__head{
+    font-size: 18px;
+}

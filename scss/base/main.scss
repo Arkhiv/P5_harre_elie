@@ -1,0 +1,29 @@
+@import "../layout/footer";
+@import "../layout/header";
+@import "../layout/button";
+@import "../layout/product";
+@import "../layout/shopcart";
+@import "../layout/command";
+@import "../layout/teddies";
+
+// MAIN ---------------------------------------
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: table;
+    width: 100%;
+    color: #582f0e;
+}
+
+footer {
+    display: table-row;
+    height: 150px;
+    background-color: #582f0e;
+}

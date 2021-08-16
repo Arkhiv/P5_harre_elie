@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>OriTeddy</title>
+</head>
+
+<body>
+    <header>
+        <div class="query__flexlogo"><a href="index.html">OriTeddy</a></div>
+        <div class="flexheader">
+            <div class="flexlogo"><a href="index.html">OriTeddy</a></div>
+            <div class="flexlink">
+                <a href="index.html" class="header__links">Nos produits</a>
+                <a href="contact.html" class="header__links">Nous contacter ?</a>
+            </div>
+
+            <div class="flexitems">
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="shopcart">
+                    <a href="shopcart.html" class="header__links"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section_shopcart">
+        <div class="shopcart_container">
+
+            <table>
+                <thead>
+                    <tr id="trcart__head">
+                        <th>Produits</th>
+                        <th>nom(s)</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody id="cart__tbody">
+                    <template id="cart__template">
+                        <tr>
+                            <td><img class="img__cart" id="teddy__img" /></td>
+                            <td id="teddy__name"></td>
+                            <td id="teddy__price"></td>
+                        </tr>
+                    </template>
+                    <template id="cart__totalrow">
+                        <tr id="trcart__total">
+                            <td colspan="2">Total</td>
+                            <td id="cart__total"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+
+            <form id="cartform">
+                <div class="input__block">
+                    <div class="input__wrapper">
+                        <label for="firstName">Prénom:</label>
+                        <input placeholder="Prénom" type="text" class="cartinputs" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="lastName">Nom:</label>
+                        <input placeholder="Nom" type="text" class="cartinputs" id="lastName" name="lastName" required>
+                    </div>
+
+                </div>
+                <div class="input__block">
+                    <div class="input__wrapper">
+                        <label for="email">Email:</label>
+                        <input placeholder="example@email.com" type="email" class="cartinputs" id="email" name="email" required>
+                    </div>
+
+                </div>
+                <div class="input__block">
+                    <div class="input__wrapper">
+                        <label for="address">Adresse:</label>
+                        <input placeholder="Adresse" type="text" class="cartinputs" id="address" name="address" required>
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="city">Ville:</label>
+                        <input placeholder="Ville" type="text" class="cartinputs" id="city" name="city" required>
+                    </div>
+                </div>
+
+                <div class="cart_payement">
+                    <button id="cart__btn" type="submit" class="btn btn2">
+                        <h4>Payer</h4>
+                    </button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footerinfos">
+            <div id="quality" class="footer__block">
+                <i class="fas fa-hand-holding-heart"></i>
+                <p class="infotitle">SAVOIR-FAIRE</p>
+                <p class="infotxt">Fabrication française de grande qualité.</p>
+            </div>
+            <div id="phone" class="footer__block">
+                <i class="fas fa-phone"></i>
+                <p class="infotitle">QUESTION ?</p>
+                <p class="infotxt">Appelez-nous au XX XX XX XX XX !</p>
+            </div>
+            <div id="freeback" class="footer__block">
+                <i class="fas fa-shipping-fast"></i>
+                <p class="infotitle">RETOURS GRATUITS</p>
+                <p class="infotxt">Retours sans frais pendant 15jours.</p>
+            </div>
+            <div id="payement" class="footer__block">
+                <i class="fas fa-money-check"></i>
+                <p class="infotitle">PAIEMENT SÉCURISÉ</p>
+                <p class="infotxt">Partenaire Paypal ou Palpay.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script src="js/shopcart.js"></script>
+
+</html>

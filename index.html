@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>OriTeddy</title>
+</head>
+
+<body>
+    <header>
+        <div class="query__flexlogo"><a href="index.html">OriTeddy</a></div>
+        <div class="flexheader">
+            <div class="flexlogo"><a href="index.html">OriTeddy</a></div>
+            <div class="flexlink">
+                <a href="index.html" class="header__links">Nos produits</a>
+                <a href="contact.html" class="header__links">Nous contacter ?</a>
+            </div>
+
+            <div class="flexitems">
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="shopcart">
+                    <a href="shopcart.html" class="header__links"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section_teddy_list" id="teddy_list_main">
+        <template class="teddy_list" id="tp_teddy_list">
+            <a id="teddy__link" class="teddy__link">
+                <div class="teddy">
+                    <img class="teddy__img" id="teddy__img"></img>
+                    <div class="teddy__name" id="teddy__name"></div>
+                    <div class="teddy__price" id="teddy__price"></div>
+                </div>
+            </a>
+        </template>
+
+    </section>
+
+
+    <footer>
+        <div class="footerinfos">
+            <div id="quality" class="footer__block">
+                <i class="fas fa-hand-holding-heart"></i>
+                <p class="infotitle">SAVOIR-FAIRE</p>
+                <p class="infotxt">Fabrication française de grande qualité.</p>
+            </div>
+            <div id="phone" class="footer__block">
+                <i class="fas fa-phone"></i>
+                <p class="infotitle">QUESTION ?</p>
+                <p class="infotxt">Appelez-nous au XX XX XX XX XX !</p>
+            </div>
+            <div id="freeback" class="footer__block">
+                <i class="fas fa-shipping-fast"></i>
+                <p class="infotitle">RETOURS GRATUITS</p>
+                <p class="infotxt">Retours sans frais pendant 15jours.</p>
+            </div>
+            <div id="payement" class="footer__block">
+                <i class="fas fa-money-check"></i>
+                <p class="infotitle">PAIEMENT SÉCURISÉ</p>
+                <p class="infotxt">Partenaire Paypal ou Palpay.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/teddylist.js"></script>
+</body>
+
+</html>
